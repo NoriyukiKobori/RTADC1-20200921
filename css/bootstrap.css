@@ -10971,4 +10971,14 @@ a.text-dark:hover, a.text-dark:focus {
 .form_box {
   max-width: 500px;
 }
+
+.my-submit {
+  min-width: 200px;
+}
+
+@media (max-width: 575px) {
+  .my-submit {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=bootstrap.css.map */

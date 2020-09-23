@@ -196,3 +196,9 @@
 .form_box{
     max-width: 500px;
 }
+.my-submit{
+    min-width: 200px;
+    @media (max-width: 575px) {
+        width: 100%;
+    }
+}
