@@ -88,9 +88,16 @@
                           </div>
                         </div>
                       </div>
+                      
                       <div class="form-group">
                         <label for="">顧客名</label>
-                        <input type="text" class="form-control">
+                        <div class="input-group mb-3">
+                          <input type="text" class="form-control" placeholder="顧客名検索" aria-label="" aria-describedby="button-addon2">
+                          <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">検索</button>
+                          </div>
+                        </div>
+                        <input type="text" placeholder="顧客名検索で選択した顧客名が入ります" class="form-control bg-light">
                       </div>
                       <div class="form-group">
                         <label for="">案件名</label>
@@ -139,6 +146,9 @@
                     <div class="form-group">
                       <label for="">内容</label>
                       <textarea rows="10" placeholder="提案商材、手土産、次回のネタといった情報も入力してください。" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-outline-secondary mt-3 my-submit">登録する</button>
                     </div>
                   </form>
                 </div>
