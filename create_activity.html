@@ -11,7 +11,7 @@
     <title>営業管理App</title>
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid p-0 p-sm-3">
       <div class="wrapper">
         <div class="l-header">
           <div class="row">
@@ -65,9 +65,86 @@
         </div>
         <div class="l-main">
           <div class="p-articles">
-            <h2>営業記録登録フォーム</h2>
-          
-            登録用フォーム
+            <div class="container p-0">
+              <div class="card mt-3 form_card">
+                <h2 class="mt-4 ml-4">営業記録登録フォーム</h2>
+                <div class="card-body ">
+                  <form action="" class="mt-2 ml-md-4">
+                    <div class="form_box">
+
+                      <div class="form-group">
+                        <label for="">年月日</label>
+                        <input type="date" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label for="">時刻</label>
+                        <div class="form-row">
+                          <div class="col-5">
+                            <input type="time" class="form-control">
+                          </div>
+                          <div class="col-1 text-center">〜</div>
+                          <div class="col-5">
+                            <input type="time" class="form-control">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="">顧客名</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label for="">案件名</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label for="">区分</label>
+                        <select name="" id="" class="form-control">
+                          <option value="">--</option>
+                          <option value="">新規挨拶</option>
+                          <option value="">定期訪問</option>
+                          <option value="">引き合い</option>
+                          <option value="">提案</option>
+                          <option value="">見積</option>
+                          <option value="">集金</option>
+                          <option value="">納品</option>
+                          <option value="">クレーム</option>
+                          <option value="">その他</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="">面会者</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label for="">期待度</label>
+                        <select name="" id="" class="form-control">
+                            <option value="">--</option>
+                            <option value="">S</option>
+                            <option value="">A</option>
+                            <option value="">B</option>
+                            <option value="">C</option>
+                            <option value="">D</option>
+                            <option value="">E</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="">担当者</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label for="">同行者</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="">内容</label>
+                      <textarea rows="10" placeholder="提案商材、手土産、次回のネタといった情報も入力してください。" class="form-control"></textarea>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>
