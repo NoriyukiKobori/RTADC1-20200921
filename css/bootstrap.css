@@ -10855,111 +10855,267 @@ a.text-dark:hover, a.text-dark:focus {
   color: #122a4f;
 }
 
-@media (max-width: 575px) {
-  .t-link {
-    width: 3%;
-  }
-  .t-date {
-    width: 19%;
-  }
-  .t-time {
-    display: none;
-  }
-  .t-client {
-    width: 29%;
-  }
-  .t-matter {
-    width: 34%;
-  }
-  .t-class {
-    display: none;
-  }
-  .t-client_person {
-    display: none;
-  }
-  .t-exp {
-    display: none;
-  }
-  .t-content {
-    display: none;
-  }
-  .t-person {
-    width: 14%;
-  }
-  .t-member {
-    display: none;
-  }
+.t-link {
+  width: 3%;
+  display: table-cell;
 }
 
-@media (max-width: 1270px) {
+.t-date {
+  width: 19%;
+  display: table-cell;
+}
+
+.t-time {
+  display: none;
+}
+
+.t-client {
+  width: 29%;
+  display: table-cell;
+}
+
+.t-matter {
+  width: 34%;
+  display: table-cell;
+}
+
+.t-class {
+  display: none;
+}
+
+.t-client_person {
+  display: none;
+}
+
+.t-exp {
+  display: none;
+}
+
+.t-content {
+  display: none;
+}
+
+.t-person {
+  width: 14%;
+  display: table-cell;
+}
+
+.t-member {
+  display: none;
+}
+
+.t-company {
+  width: 47%;
+  display: table-cell;
+}
+
+.t-ruby {
+  display: none;
+}
+
+.t-business {
+  display: none;
+}
+
+.t-p-code {
+  display: none;
+}
+
+.t-address {
+  display: none;
+}
+
+.t-url {
+  width: 50%;
+  display: table-cell;
+}
+
+.t-tel {
+  display: none;
+}
+
+.t-fax {
+  display: none;
+}
+
+.t-remarks {
+  display: none;
+}
+
+.t-register {
+  display: none;
+}
+
+.t-edit {
+  display: none;
+}
+
+@media (min-width: 575px) {
   .t-link {
     width: 5%;
+    display: table-cell;
   }
   .t-date {
     width: 13%;
+    display: table-cell;
   }
   .t-time {
     display: none;
   }
   .t-client {
     width: 24%;
+    display: table-cell;
   }
   .t-matter {
     width: 24%;
+    display: table-cell;
   }
   .t-class {
     width: 15%;
+    display: table-cell;
   }
   .t-client_person {
     display: none;
   }
   .t-exp {
     width: 9%;
+    display: table-cell;
   }
   .t-content {
     display: none;
   }
   .t-person {
     width: 10%;
+    display: table-cell;
   }
   .t-member {
     display: none;
   }
+  .t-company {
+    width: 20%;
+    display: table-cell;
+  }
+  .t-ruby {
+    width: 20%;
+    display: table-cell;
+  }
+  .t-business {
+    width: 20%;
+    display: table-cell;
+  }
+  .t-p-code {
+    display: none;
+  }
+  .t-address {
+    display: none;
+  }
+  .t-url {
+    width: auto;
+    display: table-cell;
+  }
+  .t-tel {
+    display: none;
+  }
+  .t-fax {
+    display: none;
+  }
+  .t-remarks {
+    display: none;
+  }
+  .t-register {
+    display: none;
+  }
+  .t-edit {
+    display: none;
+  }
 }
 
-@media (min-width: 1271px) {
+@media (min-width: 1200px) {
   .t-link {
     width: 3%;
+    display: table-cell;
   }
   .t-date {
     width: 8%;
+    display: table-cell;
   }
   .t-time {
     width: 8%;
+    display: table-cell;
   }
   .t-client {
     width: 14%;
+    display: table-cell;
   }
   .t-matter {
     width: 16%;
+    display: table-cell;
   }
   .t-class {
     width: 7%;
+    display: table-cell;
   }
   .t-client_person {
     width: 9%;
+    display: table-cell;
   }
   .t-exp {
     width: 5%;
+    display: table-cell;
   }
   .t-content {
     width: 16%;
+    display: table-cell;
   }
   .t-person {
     width: 7%;
+    display: table-cell;
   }
   .t-member {
     width: 7%;
+    display: table-cell;
+  }
+  .t-company {
+    width: 10%;
+    display: table-cell;
+  }
+  .t-ruby {
+    width: 10%;
+    display: table-cell;
+  }
+  .t-business {
+    width: 10%;
+    display: table-cell;
+  }
+  .t-p-code {
+    width: 5%;
+    display: table-cell;
+  }
+  .t-address {
+    width: 20%;
+    display: table-cell;
+  }
+  .t-url {
+    width: 15%;
+    display: table-cell;
+  }
+  .t-tel {
+    width: 3%;
+    display: table-cell;
+  }
+  .t-fax {
+    width: 3%;
+    display: table-cell;
+  }
+  .t-remarks {
+    width: 18%;
+    display: table-cell;
+  }
+  .t-register {
+    display: none;
+  }
+  .t-edit {
+    display: none;
   }
 }
 

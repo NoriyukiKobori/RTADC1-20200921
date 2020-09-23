@@ -72,12 +72,15 @@
         color: rgb(18, 42, 79);
     }
 }
-@media (max-width: 575px) {
+//tableスタイル
     .t-link{
         width: 3%;
+        display: table-cell;
     }
+    //営業履歴
     .t-date{
         width: 19%;
+        display: table-cell;
     }
     .t-time{
         //width: %;
@@ -85,9 +88,11 @@
     }
     .t-client{
         width: 29%;
+        display: table-cell;
     }
     .t-matter{
         width: 34%;
+        display: table-cell;
     }
     .t-class{
         //width: %;
@@ -107,19 +112,69 @@
     }
     .t-person{
         width: 14%;
+        display: table-cell;
     }
     .t-member{
         //width: %;
         display: none;
     }
-}
 
-@media (max-width: 1270px) {
+    //顧客情報
+    .t-company{
+        width: 47%;
+        display: table-cell;
+    }
+    .t-ruby{
+        //width: 50%;
+        display: none;
+    }
+    .t-business{
+        // width: %;
+        display: none;
+    }
+    .t-p-code{
+        // width: %;
+        display: none;
+    }
+    .t-address{
+        // width: %;
+        display: none;
+    }
+    .t-url{
+        width: 50%;
+        display: table-cell;
+    }
+    .t-tel{
+        //width: %;
+        display: none;
+    }
+    .t-fax{
+        //width: %;
+        display: none;
+    }
+    .t-remarks{
+        //width: %;
+        display: none;
+    }
+    .t-register{
+        // width: %;
+        display: none;
+    }
+    .t-edit{
+        //width: %;
+        display: none;
+    }
+
+
+@media (min-width: 575px) {
     .t-link{
         width: 5%;
+        display: table-cell;
     }
+    //営業履歴
     .t-date{
         width: 13%;
+        display: table-cell;
     }
     .t-time{
         //width: %;
@@ -127,13 +182,15 @@
     }
     .t-client{
         width: 24%;
+        display: table-cell;
     }
     .t-matter{
         width: 24%;
+        display: table-cell;
     }
     .t-class{
         width: 15%;
-        //display: none;
+        display: table-cell;
     }
     .t-client_person{
         //width: %;
@@ -141,7 +198,7 @@
     }
     .t-exp{
         width: 9%;
-        //display: none;
+        display: table-cell;
     }
     .t-content{
         //width: %;
@@ -149,46 +206,149 @@
     }
     .t-person{
         width: 10%;
+        display: table-cell;
     }
     .t-member{
         //width: %;
         display: none;
     }
+    //顧客情報
+    .t-company{
+        width: 20%;
+        display: table-cell;
+    }
+    .t-ruby{
+        width: 20%;
+        display: table-cell;
+    }
+    .t-business{
+        width: 20%;
+        display: table-cell;
+    }
+    .t-p-code{
+        // width: %;
+        display: none;
+    }
+    .t-address{
+        //width: ;
+        display: none;
+    }
+    .t-url{
+        width: auto;
+        display: table-cell;
+    }
+    .t-tel{
+        //width: %;
+        display: none;
+    }
+    .t-fax{
+        //width: %;
+        display: none;
+    }
+    .t-remarks{
+        //width: %;
+        display: none;
+    }
+    .t-register{
+        // width: %;
+        display: none;
+    }
+    .t-edit{
+        //width: %;
+        display: none;
+    }
 }
-@media (min-width: 1271px) {
+@media (min-width: 1200px) {
     .t-link{
         width: 3%;
+        display: table-cell;
     }
+    //営業履歴
     .t-date{
         width: 8%;
+        display: table-cell;
     }
     .t-time{
         width: 8%;
+        display: table-cell;
     }
     .t-client{
         width: 14%;
+        display: table-cell;
     }
     .t-matter{
         width: 16%;
+        display: table-cell;
     }
     .t-class{
         width: 7%;
+        display: table-cell;
     }
     .t-client_person{
         width: 9%;
+        display: table-cell;
     }
     .t-exp{
         width: 5%;
+        display: table-cell;
     }
     .t-content{
         width: 16%;
+        display: table-cell;
     }
     .t-person{
         width: 7%;
+        display: table-cell;
     }
     .t-member{
         width: 7%;
+        display: table-cell;
     }
+    //顧客情報
+    .t-company{
+        width: 10%;
+        display: table-cell;
+    }
+    .t-ruby{
+        width: 10%;
+        display: table-cell;
+    }
+    .t-business{
+        width: 10%;
+        display: table-cell;
+    }
+    .t-p-code{
+        width: 5%;
+        display: table-cell;
+    }
+    .t-address{
+        width: 20%;
+        display: table-cell;
+    }
+    .t-url{
+        width: 15%;
+        display: table-cell;
+    }
+    .t-tel{
+        width: 3%;
+        display: table-cell;
+    }
+    .t-fax{
+        width: 3%;
+        display: table-cell;
+    }
+    .t-remarks{
+        width: 18%;
+        display: table-cell;
+    }
+    .t-register{
+        //width: 3%;
+        display: none;
+    }
+    .t-edit{
+        //width: 3%;
+        display: none;
+    }    
 }
 .form_card{
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);

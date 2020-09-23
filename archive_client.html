@@ -64,13 +64,105 @@
           </nav> 
         </div>
         <div class="l-main">
+          <div class="p-filter justify-content-md-center mb-3 mt-3">
+            <div class="input-group mt-0.5 mb-1 col-lg-8">
+              <select class="custom-select w-40" id="inputGroupSelect04" aria-label="Example select with button addon">
+                <option selected>項目選択</option>
+                <option value="1">会社名</option>
+                <option value="1">会社名（フリガナ）</option>
+                <option value="2">所在地</option>
+                <option value="3">事業内容</option>
+              </select>
+              <input type="text" class="form-control w-40" placeholder="" aria-label="Example select with button addon">
+              <div class="input-group-append w-20">
+                <button class="btn btn-outline-secondary" type="button">抽出</button>
+              </div>
+            </div>
+            <div class="input-group mt-0.5 mb-1 col-lg-8">
+              <select class="custom-select w-40" id="inputGroupSelect04" aria-label="Example select with button addon">
+                <option selected>項目選択</option>
+                <option value="1">会社名（フリガナ）</option>
+                <option value="2">郵便番号</option>
+              </select>
+              <select class="custom-select w-60" id="inputGroupSelect04" aria-label="Example select with button addon">
+                <option selected>条件選択</option>
+                <option value="1">昇順</option>
+                <option value="2">降順</option>
+              </select>
+              <div class="input-group-append w-20">
+                <button class="btn btn-outline-secondary" type="button">並替</button>
+              </div>
+            </div>
+          </div>
           <div class="p-articles">
-            <h2>顧客情報アーカイブ</h2>
-            <ul>
-              <a href="single_client.html"><li>顧客1</li></a>
-              <a href="single_client.html"><li>顧客2</li></a>
-            </ul>
-            
+            <table class="my-table">
+              <thead>
+                <tr>
+                  <th scope="col" class="t-link"></th>
+                  <th scope="col" class="t-company">会社名</th>
+                  <th scope="col" class="t-ruby">フリガナ</th>
+                  <th scope="col" class="t-business">事業内容</th>
+                  <th scope="col" class="t-p-code">郵便番号</th>
+                  <th scope="col" class="t-address">所在地</th>
+                  <th scope="col" class="t-url">URL</th>
+                  <th scope="col" class="t-tel">TEL</th>
+                  <th scope="col" class="t-fax">FAX</th>
+                  <th scope="col" class="t-remarks">備考</th>
+                  <th scope="col" class="t-register">登録日</th>
+                  <th scope="col" class="t-edit">編集日</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="t-link"><a href="single_client.html"><svg width="80%" viewBox="0 0 16 16" class="bi bi-file-earmark-fill t-link_btn" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0H4zm5.5 1.5v2a1 1 0 0 0 1 1h2l-3-3z"/>
+                  </svg></a></th>
+                  <td class="t-company">ABC商事</td>
+                  <td class="t-ruby">エービーシーしょうじ</td>
+                  <td class="t-business">総合商社</td>
+                  <td class="t-p-code">1112233</td>
+                  <td class="t-address">東京都江戸川区22-55</td>
+                  <td class="t-url">https://</td>
+                  <td class="t-tel">0123456789</td>
+                  <td class="t-fax">0123456780</td>
+                  <td class="t-remarks">サンプル、サンプル、サンプル</td>
+                  <td class="t-register">20-05-01</td>
+                  <td class="t-edit">20-08-02</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="t-link"><a href="single_client.html"><svg width="80%" viewBox="0 0 16 16" class="bi bi-file-earmark-fill t-link_btn" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0H4zm5.5 1.5v2a1 1 0 0 0 1 1h2l-3-3z"/>
+                  </svg></a></th>
+                  <td class="t-company">ABC商事</td>
+                  <td class="t-ruby">エービーシーしょうじ</td>
+                  <td class="t-business">総合商社</td>
+                  <td class="t-p-code">1112233</td>
+                  <td class="t-address">東京都江戸川区22-55</td>
+                  <td class="t-url">https://</td>
+                  <td class="t-tel">0123456789</td>
+                  <td class="t-fax">0123456780</td>
+                  <td class="t-remarks">サンプル、サンプル、サンプル</td>
+                  <td class="t-register">20-05-01</td>
+                  <td class="t-edit">20-08-02</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="t-link"><a href="single_client.html"><svg width="80%" viewBox="0 0 16 16" class="bi bi-file-earmark-fill t-link_btn" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0H4zm5.5 1.5v2a1 1 0 0 0 1 1h2l-3-3z"/>
+                  </svg></a></th>
+                  <td class="t-company">ABC商事</td>
+                  <td class="t-ruby">エービーシーしょうじ</td>
+                  <td class="t-business">総合商社</td>
+                  <td class="t-p-code">1112233</td>
+                  <td class="t-address">東京都江戸川区22-55</td>
+                  <td class="t-url">https://</td>
+                  <td class="t-tel">0123456789</td>
+                  <td class="t-fax">0123456780</td>
+                  <td class="t-remarks">サンプル、サンプル、サンプル</td>
+                  <td class="t-register">20-05-01</td>
+                  <td class="t-edit">20-08-02</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
