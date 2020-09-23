@@ -43,6 +43,19 @@
 @import "utilities";
 @import "print";
 
+dt{
+    font-size: 1.8rem;
+    @media (min-width: 575px) {
+        font-size: 1.2rem;
+    }    
+}
+dd{
+    padding-left: 10px;
+    font-size: 1.7rem;
+    @media (min-width: 575px) {
+        font-size: 1.1rem;
+    }    
+}
 .wrapper{
     min-height: 95vh;
     position: relative;
@@ -360,5 +373,16 @@
     min-width: 200px;
     @media (max-width: 575px) {
         width: 100%;
+    }
+}
+.my-flex{
+    @media (min-width: 992px) {
+        display: flex;
+    }
+}
+.my-flex_right, .my-flex_left{
+    width: 100%;
+    @media (min-width: 992px) {
+        width: 50%;
     }
 }
