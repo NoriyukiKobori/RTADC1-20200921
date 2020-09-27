@@ -104,7 +104,6 @@
                 <div class="card-body ml-sm-3">
                       <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
                       <div>
-
                         <canvas id="myChart" width="" height=""></canvas>
                         <script>
                         var ctx = document.getElementById('myChart').getContext('2d');
@@ -165,6 +164,52 @@
                         });
                         </script>
                       </div>
+                      <div class="date-head mt-5"></div>
+                      <table class="table table-bordered">
+                        <thead class="thead-light">
+                          <tr>
+                            <th><p class="text-center mb-0">日</p></th>
+                            <th><p class="text-center mb-0">月</p></th>
+                            <th><p class="text-center mb-0">火</p></th>
+                            <th><p class="text-center mb-0">水</p></th>
+                            <th><p class="text-center mb-0">木</p></th>
+                            <th><p class="text-center mb-0">金</p></th>
+                            <th><p class="text-center mb-0">土</p></th>
+                          </tr>
+                          <tbody>
+                          </tbody>
+                        </thead>
+                      </table>
+                      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+                      <script>
+                        let today = new Date();
+            
+                        let year  = today.getFullYear();
+                        let month = today.getMonth() + 1;
+            
+                        $('.date-head').html(year + "-" + month);
+            
+                        let last = new Date(today.getFullYear(), today.getMonth() + 1, 0);
+                        let last_year  = last.getFullYear();
+                        let last_month = last.getMonth();
+                        let last_day   = last.getDate();
+            
+                        for (let i=1; i<=last_day; i++) {
+                            let week = new Date(last_year, last_month, i).getDay();
+                            if (!week || i == 1) {
+                                $('table').find('tbody').append('<tr>'+
+                                                                    '<td></td>' +
+                                                                    '<td></td>' +
+                                                                    '<td></td>' +
+                                                                    '<td></td>' +
+                                                                    '<td></td>' +
+                                                                    '<td></td>' +
+                                                                    '<td></td>' +
+                                                                '</tr>');
+                            }
+                            $('table').find('tbody').find('tr').last().find('td').eq(week).html(i + '<br>' + '<a href="">' + "情報" + '</a>');
+                        }
+                    </script>
                 </div>
               </div>
             </div>
